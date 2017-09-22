@@ -1,4 +1,4 @@
-var app = angular.module('<%= @app_name.humanize %>', ['ui.router', 'templates', 'Devise']);
+var app = angular.module('<%= @app_name.camelize(:lower) %>', ['ui.router', 'templates', 'Devise']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	
